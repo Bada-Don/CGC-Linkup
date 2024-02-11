@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #141414;
+      /* very dark grey */
+    }
+
+    .column {
+      background-color: #1c1c1c;
+      /* slightly lighter grey */
+      width: 10%;
+      /* adjust this as you like */
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+    .search-bar {
+      width: 350px;
+      height: 30px;
+      border: 1px solid #ffffff9e;
+      border-radius: 20px;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px auto;
+      margin-left: 500px;
+    }
+
+    .search-input {
+      width: 80%;
+      height: 80%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.692);
+      font-size: 14px;
+      padding-left: 10px;
+    }
+
+    .search-icon {
+      width: 20%;
+      height: 80%;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #hamburger-menu {
+      position: fixed;
+      top: 30px;
+      /* Adjust as needed */
+      left: 41px;
+      /* Adjust as needed */
+      z-index: 1000;
+      /* Ensures the icon stays on top of other elements */
+    }
+
+    #hamburger-menu div {
+      width: 35px;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.626);
+      margin: 6px 0;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="hamburger-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="column"></div>
+  <div class="search-bar">
+    <input type="text" class="search-input" placeholder="Search" />
+    <div class="search-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffffff9e" viewBox="0 0 24 24">
+        <path
+          d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+      </svg>
+    </div>
+  </div>
+</body>
+
+</html>

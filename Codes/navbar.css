@@ -1,0 +1,55 @@
+body{
+    background-color: #272727;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+nav{
+    position: sticky;
+    left: 0;
+    width: 5.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background: #363636;
+}
+.menu-toggle{
+    margin-bottom: 4rem;
+}
+nav label{
+    margin: 0;
+}
+nav input{
+    display:  none;
+}
+.Icons{
+    width: 1.7rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav li p{
+    margin: 0;
+}
+nav li{
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: Arial;
+}
+.active{
+    opacity: 1;
+}
+.inactive{
+    opacity: 0.5;
+}
