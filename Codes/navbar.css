@@ -1,56 +1,91 @@
-body{
-    background-color: #272727;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-}
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 5.5rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-    background: #363636;
-}
-.menu-toggle{
-    margin-bottom: 4rem;
-}
-nav label{
-    margin: 0;
-}
-nav input{
-    display:  none;
-}
-.Icons{
-    width: 1.7rem;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 0%;
-}
-nav a{
-    text-decoration: none;
-    color: white;
-}
-nav li p{
-    margin: 0;
-}
-nav li{
-    text-align: center;
-    font-size: 0.85rem;
-    font-family: Arial;
-}
-.active{
-    opacity: 1;
-}
-.inactive{
-    opacity: 0.5;
-}
+    body {
+        background-color: #272727;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        background: transparent;
+        transition: width 0.3s ease;
+    }
+
+    #menu-toggle:checked~nav {
+        background-color: aliceblue;
+    }
+
+    .menu-toggle {
+        margin-bottom: 4rem;
+    }
+
+    nav label {
+        margin: 0;
+        cursor: pointer;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .Icons {
+        width: 1.7rem;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav li p {
+        margin: 0;
+    }
+
+    nav li {
+        text-align: center;
+        font-size: 0.85rem;
+        font-family: Arial;
+    }
+
+    .active {
+        opacity: 1;
+    }
+
+    .inactive {
+        opacity: 0.5;
+    }
+
+    /* Adjust the position or width when the navigation is toggled */
+    nav.opened {
+        /* Adjust the width to your preference */
+        background: #363636;
+    }
+
+    /* Hide the icons by default */
+    nav a {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        /* Add transition for smoother animation */
+    }
+
+    /* Display the icons when the menu is toggled */
+    nav.opened a {
+        opacity: 1;
+    }
