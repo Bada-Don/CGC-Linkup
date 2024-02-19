@@ -48,13 +48,9 @@
         gap: 1.5rem;
         padding: 0%;
     }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-    }
-
+    
     nav li p {
+        color: white ;
         margin: 0;
     }
 

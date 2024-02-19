@@ -26,9 +26,9 @@ header div{
 header img{
     width: 16rem;
 }
-header input{
-    width: 22rem;
-    height: 1.2rem;
+#Search{
+    width: 30rem;
+    /* height: 1.2rem; */
     background-color: transparent;
     border-radius: 4rem;
     outline: none;

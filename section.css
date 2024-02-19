@@ -7,15 +7,15 @@
     margin-top: 2rem;
 }
 .card img{
-    width: 15rem;
+    width: 14rem;
     border-radius: 1.2rem;
-    height: 7.5;
+    height: 7.5rem;
 }
 .card{
     padding: 0.5rem;
     background-color: #363636;
     width: 15rem;
-    height: 17rem;
+    height: 14rem;
     border-radius: 1.2rem;
     cursor: pointer;
 }
@@ -33,5 +33,5 @@
 .card-info p{
     color: white;
     font-family: Verdana;
-    font-size:0.9rem;
+    font-size:0.7rem;
 }
