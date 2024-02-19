@@ -7,14 +7,14 @@
     margin-top: 2rem;
 }
 .card img{
-    width: 26rem;
+    width: 15rem;
     border-radius: 1.2rem;
-    height: 13rem;
+    height: 7.5;
 }
 .card{
     padding: 0.5rem;
     background-color: #363636;
-    width: 26rem;
+    width: 15rem;
     height: 17rem;
     border-radius: 1.2rem;
     cursor: pointer;

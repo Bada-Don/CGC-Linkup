@@ -1,0 +1,10 @@
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 81.25rem;
+}
+.cat-icons{
+    width: 4rem;
+    height: auto;
+}
