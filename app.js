@@ -58,12 +58,3 @@ lBtn.addEventListener('click', () => {
     productImg.src = imgAddress[currIndex];
 
 });
-
-// Code for redirecting the onClick() of cards of products to their respective pages.
-
-let productCard = document.querySelectorAll(`card`);
-productCard.forEach(card => {
-    card.addEventListener('click', () => {
-        window.location.href = `product details page.html`;
-    });
-});
