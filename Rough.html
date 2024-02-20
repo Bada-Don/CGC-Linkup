@@ -1,136 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHANDIGARH GROUP OF COLLEGES</title>
-  <style>
-    /* Basic styling */
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-      background-color: #f2f2f2;
-    }
-
-    .header-left {
-      display: flex;
-      align-items: center;
-    }
-
-    .header-right {
-      display: flex;
-      align-items: center;
-    }
-
-    .header-right a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: black;
-    }
-
-    .main-content {
-      padding: 1rem;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: black;
-    }
-
-    .shopping-cart {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .product-card {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .product-image {
-      width: 50px;
-      height: 50px;
-      margin-right: 1rem;
-    }
-
-    .product-details {
-      flex: 1;
-    }
-
-    .total {
-      font-weight: bold;
-    }
-
-    /* Styling specific to the image */
-    .header-left img[alt="Logo"] {
-      width: 100px;
-      height: 100px;
-    }
-
-    .product-image img[alt="Exam preparation guide for Gate 11th edition"] {
-      width: 100px;
-      height: 100px;
-    }
-
-    .social-studies {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-
-    .social-studies img[alt="Social Studies 15 sample papers"] {
-      width: 50px;
-      height: 50px;
-      margin-right: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of Divs</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 8rem 8rem;
+            grid-gap: 10px;
+            margin: 10px;
+        }
+        .grid div {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+    
+        .item-2{
+          grid-row-start: 1;
+          grid-row-end: 3;
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+    </style>
 </head>
 <body>
-  <header class="header">
-    <div class="header-left">
-      <img src="" alt="Logo">
-      <span>CHANDIGARH GROUP OF COLLEGES</span>
+    <div class="grid">
+        <!-- Manually create the grid items -->
+        <div class="item-1">Item 1</div>
+        <div class="item-2">Item 2</div>
+        <div class="item-3">Item 3</div>
     </div>
-    <div class="header-right">
-      <input type="text" placeholder="Search">
-      <img src="" alt="Search icon">
-      <a href="#">Q</a>
-    </div>
-  </header>
-  <main class="main-content">
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">LM</a>
-      <a href="#">Exam Prep</a>
-      <a href="#">Eleventh Edition</a>
-      <a href="#">Shopping</a>
-      <a href="#">Community</a>
-      <a href="#">News & Events</a>
-      <a href="#">About Us</a>
-    </nav>
-    <section class="shopping-cart">
-      <h2>My Shopping Cart</h2>
-      <a href="#">Checkout</a>
-    </section>
-    <section class="product-card">
-      <img src="" alt="Exam preparation guide for Gate 11th edition" class="product-image">
-      <div class="product-details">
-        <p>Exam preparation guide for Gate 11th edition. Know more...</p>
-        <p>₹1</p>
+</body>
+</html>

@@ -12,3 +12,44 @@
     width: 65rem; /* Adjust the width as needed */
     margin: 0 auto; /* Center the carousel horizontally */
 }
+#productPhoto, #productDetail, #ownerDetail{
+    background-color: #fff;
+}
+.grid{
+    width: 100%;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+#ownerDetail{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+.grid div img{
+    width: 100%;
+    max-height: 30rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.grid div{
+    background-color: #323232 !important;
+    border-radius: 2rem;
+}
+#productPhoto{
+    display: flex;
+    align-items: center;
+}
+
+#productPhoto button{
+    height: 100%;
+    width: 3rem;
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: none;
+    
+}
