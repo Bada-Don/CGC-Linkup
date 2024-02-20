@@ -38,7 +38,7 @@ header img{
     padding-right: 1rem;
     color: white;
 }
-header input:focus{
+#Search:focus{
     border: 2.5px solid white;
 }
 
