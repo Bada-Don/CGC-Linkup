@@ -52,6 +52,7 @@
             </div>
         </header>
         <section class="main-content">
+            <h1>Checkout</h1>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -65,13 +66,14 @@
                         aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
                             <div>
-                                <input type="radio" name="location" id="SelectLocation">
-                                <label for="SelectLocation">College Gate:
+                                <input type="radio" name="location" id="SelectLocation" required>
+                                <label for="SelectLocation">
                                     <select name="location" id="locationSelect">
                                         <option value="" disabled selected>--- Select ---</option>
-                                        <option value="gate1">Gate 1</option>
-                                        <option value="gate2">Gate 2</option>
-                                        <option value="gate3">Gate 3</option>
+                                        <option value="1">Landran Chowk</option>
+                                        <option value="2">Near Tuck Shop</option>
+                                        <option value="3">Near Parivartan Ground</option>
+                                        <option value="4">Near Sukhsagar Hostel</option>
                                     </select>
                                 </label>
                             </div>
@@ -84,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -96,12 +98,41 @@
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+                            <div>
+                                <input type="radio" name="payment" id="netbanking" required>
+                                <label for="SelectLocation">
+                                    <select name="payment" id="netbanking">
+                                        <option value="" disabled selected>Net banking</option>
+                                        <option value="1">Airtel Payments Bank</option>
+                                        <option value="2">Axis Bank</option>
+                                        <option value="3">HDFC Bank</option>
+                                        <option value="4">ICICI Bank</option>
+                                        <option value="5">Kotak Bank</option>
+                                        <option value="6">State Bank Of India</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="location" id="upi">
+                                <label for="upi">Other UPI Apps
+                                    <input type="text" id="UPI-ID" placeholder="Enter your UPI-ID">
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="emi" required>
+                                <label for="emi">
+                                    <select name="payment" id="EMI">
+                                        <option value="" disabled selected>EMI</option>
+                                        <option value="1"><button>Add a new card</button></option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="payment" id="COD" required>
+                                <label for="COD">
+                                    Cash on delivery <span>(Currently not available)</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,9 +147,7 @@
                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="panelsStayOpen-headingThree">
                         <div class="accordion-body">
-                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, incidunt
-                                magnam aspernatur laboriosam quis modi repellat obcaecati, culpa fugiat nisi doloribus
-                                quam odio non ut eius! Excepturi, hic atque!</h2>
+                            <button id="placeOrder">Place your order</button>
                         </div>
                     </div>
                 </div>
