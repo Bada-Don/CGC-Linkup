@@ -63,10 +63,10 @@
     color: #8e1a1c;
     font-size: 1.3rem;
 }
-#placeOrder {
+.finalbtn {
     background-color: #cc9900;
     height: 4rem;
-    width: 50%;
+    width: 30rem;
     font-size: 2rem;
     color: black;
     font-family: Avalon;
