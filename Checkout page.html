@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="shopping.css">
+    <link rel="stylesheet" href="checkout.css">
+
+    <title>Home page</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-toggle"><img class="Icons" src="./assets/Icons/Hamburger_icon.svg.png"
+                alt=""></label>
+
+        <ul class="menu">
+            <li id="Home" class="active"><a href="./index.html"><img class="Icons" src="./assets/Icons/Home.png" alt=""
+                        srcset="">
+                    <p>Home</p>
+                </a></li>
+            <li id="Shopping" class="inactive"><a href="product listing page.html"><img class="Icons"
+                        src="./assets/Icons/Shopping.png" alt="" srcset="">
+                    <p>Shopping</p>
+                </a></li>
+            <li id="News" class="inactive"><a href="#"><img class="Icons" src="./assets/Icons/News.png" alt=""
+                        srcset="">
+                    <p>News & Events</p>
+                </a></li>
+            <li id="About" class="inactive"><a href="#"><img class="Icons" src="./assets/Icons/About.png" alt=""
+                        srcset="">
+                    <p>About Us</p>
+                </a></li>
+
+    </nav>
+    <div class="all-content">
+        <header>
+            <img src="./assets/CGC Logo.png" alt="" srcset="">
+            <input type="text" placeholder="Search" id="Search">
+            <div class="acc-not">
+                <a href=""><img class="Icons" src="./assets/Icons/Cart.png" alt="" srcset=""></a>
+                <a href=""><img class="Icons" src="./assets/Icons/Notificaton logo.png" alt="" srcset=""></a>
+                <a href=""><img id="Account" src="./assets/Icons/Account.png" alt="" srcset=""></a>
+            </div>
+        </header>
+        <section class="main-content">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            1. Select Meetup Location
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div>
+                                <input type="radio" name="location" id="SelectLocation">
+                                <label for="SelectLocation">College Gate:
+                                    <select name="location" id="locationSelect">
+                                        <option value="" disabled selected>--- Select ---</option>
+                                        <option value="gate1">Gate 1</option>
+                                        <option value="gate2">Gate 2</option>
+                                        <option value="gate3">Gate 3</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="location" id="ownLocation">
+                                <label for="ownLocation">Own Location:
+                                    <input type="text" id="OwnLocationInput" placeholder="Enter your location">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            2. Select a payment method
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            3. Confirm order
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, incidunt
+                                magnam aspernatur laboriosam quis modi repellat obcaecati, culpa fugiat nisi doloribus
+                                quam odio non ut eius! Excepturi, hic atque!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.accordion{
+    width: 90%;
+}
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+}
+.accordion-body select{
+    color: black;
+}
+.accordion-body option{
+    color: black;
+}
+.accordion-body input{
+    color: black;
+}
+.accordion-button{
+    background-color: black;
+    color: #5aaace;
+    font-family: Avalon;
+    font-size: 1.35rem;
+    text-align: left;
+    width: 100%;
+}
