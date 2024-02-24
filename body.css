@@ -1,7 +1,26 @@
-*{
+* {
     color: white;
 }
-body{
+
+body {
     color: white;
 
+}
+
+.complaintBtn {
+    z-index: 10;
+    position: fixed;
+    bottom: 2rem;
+    right: 5rem;
+    background-color: #007299;
+    border: 2px solid black;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    width: 17rem;
+    height: 4rem;
+    box-shadow: 0.5rem 0.2rem 01rem black;
 }
