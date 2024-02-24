@@ -86,22 +86,6 @@
     text-align: center;
 }
 
-div h1 {
-    font-size: 3rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    margin: 0;
-}
-
-div h2 {
-    font-size: 2rem;
-    color: white;
-}
-
-div h3 {
-    font-size: 2rem;
-    color: rgb(0, 158, 8);
-}
 
 .addToCart {
     margin-right: 2rem;

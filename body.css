@@ -6,27 +6,19 @@ body {
     color: white;
 
 }
-
-.complaintBtn {
-    z-index: 10;
-    position: fixed;
-    bottom: 2rem;
-    right: 5rem;
-    background-color: #007299;
-    border: 2px solid white;
-    border-radius: 1rem;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px 32px;
-    text-align: center;
-    width: 17rem;
-    height: 4rem;
-    box-shadow: 0.5rem 0.2rem 01rem black;
-    transition: all 0.3s;
+h1 {
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin: 0;
 }
 
-.complaintBtn:hover {
-    background-color: #0693c2;
-    scale: 1.1;
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+h3 {
+    font-size: 2rem;
+    color: rgb(0, 158, 8);
 }

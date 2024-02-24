@@ -1,0 +1,17 @@
+/* Keep your existing styles */
+
+.like-button {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.unliked-icon, .liked-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.liked-icon {
+    display: none;
+}

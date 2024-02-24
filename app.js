@@ -58,3 +58,25 @@ lBtn.addEventListener('click', () => {
     productImg.src = imgAddress[currIndex];
 
 });
+
+// Making like button in post functional
+const likeButton = document.getElementById('like-button');
+const unlikedIcon = document.querySelector('.unliked-icon');
+const likedIcon = document.querySelector('.liked-icon');
+
+let isLiked = false;
+
+likeButton.addEventListener('click', function() {
+    isLiked = !isLiked;
+    if (isLiked) {
+        unlikedIcon.style.display = 'none';
+        likedIcon.style.display = 'inline';
+        console.log("Liked");
+    } else {
+        unlikedIcon.style.display = 'inline';
+        likedIcon.style.display = 'none';
+        console.log("Unliked");
+    }
+});
+
+

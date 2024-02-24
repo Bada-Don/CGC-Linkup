@@ -1,111 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid of Divs</title>
+    <title>Social Media Post</title>
+    <link rel="stylesheet" href="rough.css">
 </head>
-    <style>
-        /* Styles for the card container */
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-            /* Adjust the gap between cards */
-        }
-
-        /* Styles for each card */
-        .card {
-            background-color: #f0f0f0;
-            border-radius: 8px;
-            padding: 20px;
-            width: 300px;
-            /* Adjust the width of each card */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Styles for the title of each article */
-        .card h2 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            color: #333;
-        }
-
-        /* Styles for the description of each article */
-        .card p {
-            margin-bottom: 0;
-            color: #666;
-        }
-
-        /* Styles for the additional information */
-        .additional-info {
-            display: none;
-            /* Hide additional information by default */
-            margin-top: 10px;
-            font-size: 0.9rem;
-        }
-
-        /* Styles for the additional information when displayed */
-        .additional-info.active {
-            display: block;
-            color: #888;
-        }
-    </style>
-
 <body>
-    <div class="card" id="article1">
-        <h2>Title of Article 1</h2>
-        <p>Description or preview of the article</p>
+    <div class="post">
+        <h1 class="post-title">Post Title</h1>
+        <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Integer vel fermentum ligula. Sed sit amet nunc nec nisi vehicula auctor.</p>
+        <div class="post-interactions">
+            <button class="like-button" id="like-button">
+                <img src="assets/Icons/Unlike.png" alt="Unlike" class="unliked-icon">
+                <img src="assets/Icons/Like.png" alt="Like" class="liked-icon">
+            </button>
+            <button class="comment-button">Comment</button>
+            <button class="share-button">Share</button>
+        </div>
+        <div class="comments">
+            <h2>Comments:</h2>
+            <ul>
+                <li><strong>User1:</strong> Nice post!</li>
+                <li><strong>User2:</strong> Keep up the good work!</li>
+            </ul>
+            <textarea class="comment-input" placeholder="Add a comment"></textarea>
+            <button class="add-comment-button">Add Comment</button>
+        </div>
+        <div class="share-options">
+            <button class="share-facebook">Share on Facebook</button>
+            <button class="share-twitter">Share on Twitter</button>
+            <button class="share-whatsapp">Share on WhatsApp</button>
+        </div>
     </div>
-    <div class="card" id="article2">
-        <h2>Title of Article 2</h2>
-        <p>Description or preview of the article</p>
-    </div>
-    <!-- Add more cards as needed -->
-
-    <script>
-        // Get all the card elements
-        const cards = document.querySelectorAll('.card');
-
-        // Add click event listener to each card
-        cards.forEach(card => {
-            card.addEventListener('click', () => {
-                // Get additional information for the clicked article
-                const articleId = card.id;
-                const additionalInfo = getAdditionalInfo(articleId); // You'll need to implement this function
-
-                // Display the additional information (e.g., in a modal or a sidebar)
-                displayAdditionalInfo(additionalInfo); // You'll need to implement this function
-            });
-        });
-
-        // Function to fetch additional information for the article
-        function getAdditionalInfo(articleId) {
-            // You can fetch this information from a database or an API
-            // For now, let's just return some dummy data
-            return {
-                likes: 100,
-                comments: 20,
-                postedBy: 'John Doe'
-            };
-        }
-
-        // Function to display the additional information
-        function displayAdditionalInfo(info) {
-            // You can display this information in a modal or a sidebar
-            // For now, let's just log it to the console
-            console.log(info);
-        }
-
-    </script>
+    <script src="rough.js"></script>
 </body>
-
 </html>

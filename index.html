@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="navbar.css">
@@ -12,6 +11,7 @@
     <link rel="stylesheet" href="section.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="complaints.css">
     <title>Home page</title>
 </head>
 
@@ -60,12 +60,15 @@
                         Stationery and Merchandise Available on
                         Our Online Store!</p>
                 </div>
-                <div class="interaction-icons">
-                    <img id="like" src="./assets/Icons/Unlike.png" alt="" srcset="">
-                    <img id="comment" src="./assets/Icons/Comment_C.png" alt="" srcset="">
-                    <img id="share" src="./assets/Icons/Share.png" alt="" srcset="">
+                <div class="post-interactions">
+                    <button class="like-button" id="like-button">
+                        <img src="assets/Icons/Unlike.png" alt="Unlike" class="unliked-icon">
+                        <img src="assets/Icons/Like.png" alt="Like" class="liked-icon">
+                    </button>
+                    <button class="comment-button"><img src="./assets/Icons/Comment_C.png" alt="Comment"></button>
+                    <button class="share-button"><img src="./assets/Icons/Share.png" alt=""></button>
                 </div>
-                
+
             </div>
             <div class="card">
                 <img src="./assets/Thumbnails/Complaint.jpg" alt="" srcset="">
