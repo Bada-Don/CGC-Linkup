@@ -21,3 +21,58 @@
     background-color: #0693c2;
     scale: 1.1;
 }
+
+.complaintForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 2rem;
+    background-color: #323232;
+    padding: 3rem;
+}
+
+.complaintForm input {
+    margin-bottom: 1.5rem;
+}
+
+.complaintForm label {
+    background-color: transparent;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Avalon';
+}
+.complaintForm option{
+    color: black;
+    font-family: sans-serif;
+}
+.complaintForm input:focus,
+select:focus,
+textarea:focus{
+    border: 4px solid white;
+}
+.complaintForm input,
+select,
+textarea {
+    background-color: transparent;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+    font-family: 'Avalon';
+    margin-bottom: 2rem;
+    padding: 0.3rem;
+    padding-left: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.754);
+    outline: none;
+}
+.urgencyButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#submit{
+    background-color: #0166ff;
+    color: white;
+}

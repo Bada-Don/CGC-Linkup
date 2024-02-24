@@ -52,10 +52,44 @@
         </header>
         <br>
         <h1>Complaint Registration</h1>
+        <br>
         <form class="complaintForm" action="">
             <label for="title">Title:</label>
-        </form>
+            <input type="text" placeholder="Brief description of the complaint." required>
+            
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="30" rows="3" required></textarea>
+            
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="---Select---" disabled selected required>- - - Select - - -</option>
+                <option value="infra">Infrastructure</option>
+                <option value="Staff">Staff</option>
+                <option value="Course">Academic Concerns</option>
+                <option value="safety">Safety Hazards</option>
+                <option value="Maintenance">Maintenance Requests:</option>
+                <option value="Administrative">Administrative Issues:</option>
+            </select>
+            
+            <label for="location">Location:</label>
+            <input type="text" placeholder="Specify the location where the issue occurred." required>
 
+            <label for="Attachments">Attachments:</label>
+            <input type="file" name="Attachments" id="">
+
+            <label for="urgency">Urgency:</label>
+            <div class="urgencyButtons">
+                <label><input type="radio" id="low" name="urgency" value="Low" required> Low</label>
+                <label><input type="radio" id="medium" name="urgency" value="Medium"> Medium</label>
+                <label><input type="radio" id="high" name="urgency" value="High"> High</label>
+            </div>
+            <!-- div for two buttons: "Save as draft" and "Submit" -->
+            <div class="buttonDiv">
+                <button id="Save" class="finalbtn" type="reset">Save as Draft</button>
+                <button id="submit" class="finalbtn" type="submit">Submit</button> 
+            </div>
+        </form>
+        
     </div>
 
     <script type="module" src="app.js"></script>
