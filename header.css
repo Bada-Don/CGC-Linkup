@@ -23,9 +23,11 @@ header div{
     align-items: center;
     gap: 2rem;
 }
-header img{
+#logo{
     width: 16rem;
+    cursor: pointer;
 }
+
 #Search{
     width: 30rem;
     height: 2.5rem;
