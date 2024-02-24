@@ -72,7 +72,7 @@ textarea {
     display: flex;
     justify-content: space-between;
 }
-#submit{
+.submit{
     background-color: #0166ff;
     color: white;
 }
