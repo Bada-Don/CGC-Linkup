@@ -216,7 +216,7 @@
     }
 
     #textInfo {
-        width: 40%;
+        width: 60%;
     }
 
     #ownerDetail {
@@ -225,5 +225,7 @@
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
+        padding: 1rem;
+        gap: 0;
     }
 }
