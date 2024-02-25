@@ -15,7 +15,6 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -76,5 +75,9 @@
         color: white;
         font-family: Verdana;
         font-size: 1rem;
+    }
+    .productCards{
+        gap: 1rem;
+        justify-content: center;
     }
 }

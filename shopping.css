@@ -28,7 +28,7 @@
     gap: 2rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 2fr 1.2fr;
+    grid-template-rows: 1fr 11fr;
 }
 
 #ownerDetail {
@@ -63,6 +63,9 @@
     color: white;
     background-color: transparent;
     border: none;
+}
+#productPhoto button:focus {
+    outline: none;
 }
 
 #productDetail {
@@ -121,7 +124,8 @@
 .wishlist:hover {
     background-color: rgb(45, 146, 241);
 }
-.remove{
+
+.remove {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     height: fit-content;
@@ -132,6 +136,7 @@
     background-color: black;
 
 }
+
 .cartItem {
     display: flex;
     justify-content: space-between;
@@ -141,18 +146,22 @@
     padding: 1rem;
     border-radius: 2rem;
 }
-.cartItem h1{
-    
+
+.cartItem h1 {
+
     margin-right: 2rem;
 }
-.cartItem p{
+
+.cartItem p {
     font-size: 1.5rem;
     width: 16rem;
 }
+
 .cartItem img {
     border-radius: 1rem;
 }
-.totalAmount{
+
+.totalAmount {
     width: 90%;
     background-color: #323232;
     padding: 1rem;
@@ -161,4 +170,60 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Adding responsiveness    */
+@media only screen and (max-width: 768px) {
+    .cat-icons {
+        width: 3rem;
+        height: auto;
+    }
+
+    .grid {
+        grid-template-rows: 1fr 0.7fr 0.9fr;
+        grid-template-columns: 1fr;
+    }
+
+    #productPhoto img {
+        width: 75%;
+        height: max-content;
+    }
+
+    #productPhoto {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #productDetail {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .grid h1 {
+        font-size: 2rem;
+    }
+
+    .grid h2 {
+        font-size: 1rem;
+    }
+
+    .grid h3 {
+        font-size: 1rem;
+    }
+
+    #ownerDetail img {
+        width: 40%;
+    }
+
+    #textInfo {
+        width: 40%;
+    }
+
+    #ownerDetail {
+        flex-direction: row;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
