@@ -94,7 +94,7 @@
 /* Responsiveness addition:: */
 @media only screen and (max-width: 768px) {
     .finalbtn {
-        width: 40%;
+        width: 100%;
         height: 3rem;
         font-size: 1rem;
     }
