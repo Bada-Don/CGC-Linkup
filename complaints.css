@@ -41,15 +41,18 @@
     font-size: 1.7rem;
     font-family: 'Avalon';
 }
-.complaintForm option{
+
+.complaintForm option {
     color: black;
     font-family: sans-serif;
 }
+
 .complaintForm input:focus,
 select:focus,
-textarea:focus{
+textarea:focus {
     border: 4px solid white;
 }
+
 .complaintForm input,
 select,
 textarea {
@@ -63,16 +66,38 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.754);
     outline: none;
 }
-.urgencyButtons{
+
+.urgencyButtons {
     display: flex;
     justify-content: space-between;
 }
 
-.buttonDiv{
+.buttonDiv {
     display: flex;
     justify-content: space-between;
 }
-.submit{
+
+.submit {
     background-color: #0166ff;
     color: white;
+}
+
+/* Responsiveness addition:: */
+@media only screen and (max-width: 768px) {
+    .complaintForm {
+        width: 90%;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .complaintForm label {
+        font-size: 1.2rem;
+    }
+    .complaintForm input,
+    select,
+    textarea {
+        border-radius: 1rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 }

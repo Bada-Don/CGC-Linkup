@@ -59,12 +59,14 @@
 .accordion-body input {
     color: black;
 }
+
 .accordion-body div label span {
     color: #8e1a1c;
     font-size: 1.3rem;
 }
+
 .finalbtn {
-    background-color: #cc9900;
+    background-color: #f7bf17;
     height: 4rem;
     width: 30rem;
     font-size: 2rem;
@@ -87,4 +89,13 @@
 
 .accordion-button:focus {
     outline: none;
+}
+
+/* Responsiveness addition:: */
+@media only screen and (max-width: 768px) {
+    .finalbtn {
+        width: 40%;
+        height: 3rem;
+        font-size: 1rem;
+    }
 }
