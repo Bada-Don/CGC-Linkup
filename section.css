@@ -21,11 +21,12 @@
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    justify-content: space-between;
     padding: 0.5rem;
     background-color: #363636;
     width: 22rem;
-    height: 25rem;
+    height: 28rem;
     border-radius: 1.2rem;
     cursor: pointer;
 }
@@ -33,7 +34,8 @@
 .card img {
     width: 20rem;
     border-radius: 1.2rem;
-    height: 15rem;
+    height: 12rem;
+    margin-bottom: 1rem;
 }
 
 .card div img {
@@ -47,6 +49,7 @@
     /* justify-content: center; */
     align-items: center;
     gap: 0.5rem;
+    
 }
 
 .card-info p {
