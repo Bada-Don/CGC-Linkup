@@ -54,3 +54,10 @@
     font-family: Verdana;
     font-size: 1.2rem;
 }
+/* adding responsiveness */
+@media only screen and (max-width: 768px){
+    .all-content{
+        margin: 0;
+        padding: 0;
+    }
+}

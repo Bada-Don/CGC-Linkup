@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get a reference to the menu toggle checkbox
+    const menuToggle = document.getElementById('menu-toggle');
+    
+    // Get a reference to the nav element
+    const nav = document.querySelector('nav');
+
+    // Trigger the change event on the menu toggle checkbox
+    menuToggle.checked = true;
+    
+    // Add the 'opened' class to the nav element
+    nav.classList.add('opened');
+});
+
 const menuItems = document.querySelectorAll(`.menu li`);
 
 menuItems.forEach(item => {
