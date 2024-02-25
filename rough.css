@@ -1,17 +1,19 @@
-/* Keep your existing styles */
-
-.like-button {
-    padding: 0;
+body{
+    background-color: black;
+}
+.like-dislike {
+    text-align: center;
+  }
+  
+  .like-button {
     background: none;
     border: none;
     cursor: pointer;
-}
-
-.unliked-icon, .liked-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.liked-icon {
-    display: none;
-}
+  }
+  
+  .like-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  

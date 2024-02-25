@@ -60,4 +60,18 @@
         margin: 0;
         padding: 0;
     }
+    .card {
+        width: 90%;
+        height: auto;
+    }
+    .card img {
+        width: 100%;
+        border-radius: 1.2rem;
+        height: auto;
+    }
+    .card-info p {
+        color: white;
+        font-family: Verdana;
+        font-size: 1rem;
+    }
 }
