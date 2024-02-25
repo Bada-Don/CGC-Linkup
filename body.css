@@ -25,3 +25,12 @@ h3 {
     font-size: 2rem;
     color: rgb(0, 158, 8);
 }
+/* Add responsiveness */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+}
