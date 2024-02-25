@@ -11,14 +11,14 @@ function toggleLike() {
   }
 }
 // Making comment button in post functional
-let commentOpen = false;
+let isCommented = false;
 
-function toggleComments() {
-  commentOpen = !commentOpen;
-  const commentIcon = document.getElementById('like-icon');
-  if (isLiked) {
-    likeIcon.src = 'assets/Icons/Like.png';
+function toggleComment() {
+  isCommented = !isCommented;
+  const commentIcon = document.getElementById('comment-icon');
+  if (isCommented) {
+    commentIcon.src = 'assets/Icons/Comment_O.png';
   } else {
-    likeIcon.src = 'assets/Icons/Unlike.png';
+    commentIcon.src = 'assets/Icons/Comment_C.png';
   }
 }
