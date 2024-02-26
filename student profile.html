@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Icons/CGCLinkup logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="complaints.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="studentProfile.css">
+    <title>Home page</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-toggle"><img class="Icons" src="./assets/Icons/Hamburger_icon.svg.png"
+                alt=""></label>
+
+        <ul class="menu">
+            <li id="Home" class="active"><a href=""><img class="Icons" src="./assets/Icons/Home.png" alt="" srcset="">
+                    <p>Home</p>
+                </a></li>
+            <li id="Shopping" class="inactive"><a href="product listing page.html"><img class="Icons"
+                        src="./assets/Icons/Shopping.png" alt="" srcset="">
+                    <p>Shopping</p>
+                </a></li>
+            <li id="News" class="inactive"><a href="#"><img class="Icons" src="./assets/Icons/News.png" alt=""
+                        srcset="">
+                    <p>News & Events</p>
+                </a></li>
+            <li id="About" class="inactive"><a href="#"><img class="Icons" src="./assets/Icons/About.png" alt=""
+                        srcset="">
+                    <p>About Us</p>
+                </a></li>
+
+    </nav>
+    <div class="all-content">
+        <header>
+            <img id="logo" onclick="window.location.href=`index.html`" src="./assets/CGC Logo.png" alt="" srcset="">
+            <input type="text" placeholder="Search" id="Search">
+            <div class="acc-not">
+                <a href="Cart.html"><img class="Icons" src="./assets/Icons/Cart.png" alt="" srcset=""></a>
+                <a href=""><img class="Icons" src="./assets/Icons/Notificaton logo.png" alt="" srcset=""></a>
+                <a href=""><img id="Account" src="./assets/Icons/Account.png" alt="" srcset=""></a>
+            </div>
+            <label for="check" class="checkbtn">
+                <img class="Icons" src="./assets/Icons/Hamburger_icon.svg.png" alt="">
+            </label>
+
+        </header>
+        <input type="checkbox" id="check">
+        <div class="headerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product listing page.html">Shopping</a></li>
+                <li><a href="#">News & Events</a></li>
+                <li><a href="">About Us</a></li>
+                <li>
+                    <div>
+                        <a href="Cart.html"><img class="hIcons" src="./assets/Icons/Cart.png" alt="" srcset=""></a>
+                        <a href=""><img class="hIcons" src="./assets/Icons/Notificaton logo.png" alt="" srcset=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- // student profile page -->
+        <section class="main-content">
+            <h1>Student Profile</h1>
+            <div class="student-profile">
+                <div class="studentDetail">
+                    <div class="studentImg">
+                        <img src="./assets/Thumbnails/IMG_20230405_14593.jpg" alt="">
+                        <h1>Harshit Singla</h1>
+                    </div>
+                    <button class="finalbtn">View Reports</button>
+                </div>
+                <div class="personalDetails">
+                    <h2>Personal Details</h2>
+                    <br>
+                    <h4> <b>Name: </b>Harshit Singla</h4>
+                    <h4> <b>Phone No.: </b>+91 76965 13958</h4>
+                    <h4> <b>Email: </b>harshitashwani@gmail.com</h4>
+                    <h4> <b>College Email: </b>coe231093.cse.coe@cgc.edu.in</h4>
+                </div>
+                <div class="classDetails">
+                    <h2>Class Details</h2>
+                    <br>
+                    <h4><b>Class: </b>CSE-B</h4>
+                    <h4><b>URN: </b>2320009</h4>
+                    <h4><b>College Roll. No: </b>COE231093</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="postInterface.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
