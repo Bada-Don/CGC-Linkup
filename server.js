@@ -40,7 +40,7 @@ app.get('/login', checkNotAuthenticated, (req, res) => {
 })
 
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
-  successRedirect: 'https://cgclinkup.vercel.app/home.html', // If login successful then the page redirects.
+  successRedirect: 'https://cgclinkup.vercel.app/index.html', // If login successful then the page redirects.
   failureRedirect: '/login',
   failureFlash: true
 }))
